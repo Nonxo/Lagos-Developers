@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.twisstosin.andela_alc_challenge.ProfileActivity"
+    tools:showIn="@layout/activity_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="70dp">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/davido"
+            android:layout_gravity="center"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="@color/primary_dark"/>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_holder"
+            style="@style/Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp">
+
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/Name"
+                        android:paddingTop="10dp"
+                        android:text="Your Full Name" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        style="@style/SubTitle"
+                        android:text="Just a Username" />
+                    <LinearLayout
+                        android:background="@drawable/rounded_rectangle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="20dp"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:id="@+id/repo_num"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/Name"
+                                android:text="233"
+                                android:textColor="@color/white"
+                                />
+                            <TextView
+                                android:id="@+id/repo_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="repos"
+                                android:gravity="center_horizontal"
+                                android:textSize="10sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_gravity="center">
+                            <TextView
+                                android:id="@+id/following_num"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/Name"
+                                android:text="233"
+                                android:textColor="@color/white"
+                                />
+                            <TextView
+                                android:id="@+id/following_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="following"
+                                android:gravity="center_horizontal"
+                                android:textSize="10sp"
+                                android:textColor="@color/white"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/followers_num"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                style="@style/Name"
+                                android:text="233"
+                                android:textColor="@color/white"
+
+                                />
+                            <TextView
+                                android:id="@+id/followers_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="followers"
+                                android:gravity="center_horizontal"
+                                android:textSize="10sp"
+                                android:textColor="@color/white"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/github_url"
+                        style="@style/Brief"
+                        android:layout_margin="5dp"
+                        android:autoLink="web"
+                        android:text="github.com/twisstosin" />
+
+                    <Button
+                        android:id="@+id/share_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SHARE"
+                        android:textSize="10dp"
+                        android:padding="10dp"
+                        android:drawableStart="@drawable/ic_share_white_24dp"
+                        style="@style/SpecialButton"
+                        android:layout_gravity="center_horizontal"
+                        android:drawableLeft="@drawable/ic_share_white_24dp" />
+                    <View
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="@drawable/divider"/>
+                    <TextView
+                        android:id="@+id/repo_update_text"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOP REPO"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="gone"/>
+                    <LinearLayout
+                        android:id="@+id/app_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/divider"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/social_media_vertical_padding">
+                        <TextView
+                            android:id="@+id/tap_get_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tap to Get Top Repo"
+                            android:gravity="center_horizontal"
+                            android:padding="40dp"
+                            android:visibility="gone"/>
+                        <RelativeLayout
+                            android:id="@+id/repo_layout"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:paddingLeft="@dimen/relative_horizontal_padding"
+                            android:paddingRight="@dimen/relative_horizontal_padding"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/app_icon"
+                                android:layout_width="@dimen/app_icon_size"
+                                android:layout_height="@dimen/app_icon_size"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="15dp"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/ic_launcher" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/app_icon"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/top_repo_text"
+                                    style="@style/Name"
+                                    android:layout_width="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Your Repo Name" />
+
+                                <TextView
+                                    android:id="@+id/top_repo_text2"
+                                    style="@style/TextLabel"
+                                    android:gravity="left"
+                                    android:text="Just a sub title" />
+
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
